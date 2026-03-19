@@ -10,7 +10,7 @@
 ## 실행 화면 (과제1)
 - 과제1 코드의 실행 스크린샷
 <img width="802" height="488" alt="image" src="https://github.com/user-attachments/assets/8163c05f-05ec-4326-9b31-380064da9ae9" />
-
+![과제1 실행 화면](img/과제1 실행 화면.png)
 - 과제내용
  - Label(표시), TextBox(입력), Button(전송), ListBox(대화창)를 적절히 배치.
  - 전송 버튼 클릭 시 TextBox의 텍스트를 ListBox의 항목(Items)으로 추가.
