@@ -1,3 +1,5 @@
+using System;
+
 namespace EchoMesseger
 {
     public partial class Form1 : Form
@@ -11,7 +13,8 @@ namespace EchoMesseger
         {
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                listBox1.Items.Add(textBox1.Text);
+                listBox1.Items.Add($"[{DateTime.Now.ToString("HH : mm : ss")}] {textBox1.Text.Trim()}");
+                label2.Text = $"현재 대화: {listBox1.Items.Count}개";
                 textBox1.Clear();
                 textBox1.Focus();
             }
@@ -21,7 +24,8 @@ namespace EchoMesseger
         {
             if (e.KeyCode == Keys.Enter && !string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                listBox1.Items.Add(textBox1.Text);
+                listBox1.Items.Add($"[{DateTime.Now.ToString("HH : mm : ss")}] {textBox1.Text.Trim()}");
+                label2.Text = $"현재 대화: {listBox1.Items.Count}개";
                 textBox1.Clear();
                 textBox1.Focus();
             }

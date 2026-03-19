@@ -32,6 +32,7 @@
             listBox1 = new ListBox();
             textBox1 = new TextBox();
             button1 = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -55,7 +56,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("맑은 고딕", 15F);
-            textBox1.Location = new Point(38, 377);
+            textBox1.Location = new Point(39, 388);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(573, 41);
             textBox1.TabIndex = 2;
@@ -71,11 +72,19 @@
             button1.Text = "전송";
             button1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            label2.Location = new Point(38, 359);
+            label2.Name = "label2";
+            label2.Size = new Size(573, 20);
+            label2.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(listBox1);
@@ -92,5 +101,6 @@
         private ListBox listBox1;
         private TextBox textBox1;
         private Button button1;
+        private Label label2;
     }
 }
