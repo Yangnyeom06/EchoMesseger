@@ -33,6 +33,9 @@
             textBox1 = new TextBox();
             button1 = new Button();
             label2 = new Label();
+            label3 = new Label();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -48,18 +51,20 @@
             // 
             listBox1.Font = new Font("맑은 고딕", 15F);
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(38, 102);
+            listBox1.Location = new Point(38, 84);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(573, 249);
             listBox1.TabIndex = 1;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // textBox1
             // 
             textBox1.Font = new Font("맑은 고딕", 15F);
-            textBox1.Location = new Point(39, 388);
+            textBox1.Location = new Point(38, 365);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(573, 41);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             textBox1.KeyDown += textBox1_KeyDown;
             // 
             // button1
@@ -71,19 +76,52 @@
             button1.TabIndex = 3;
             button1.Text = "전송";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
-            label2.Location = new Point(38, 359);
+            label2.Location = new Point(38, 336);
             label2.Name = "label2";
             label2.Size = new Size(573, 20);
             label2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            label3.Location = new Point(39, 414);
+            label3.Name = "label3";
+            label3.Size = new Size(572, 22);
+            label3.TabIndex = 5;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("맑은 고딕", 15F);
+            button2.Location = new Point(640, 84);
+            button2.Name = "button2";
+            button2.Size = new Size(139, 65);
+            button2.TabIndex = 6;
+            button2.Text = "삭제";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("맑은 고딕", 10F);
+            button3.Location = new Point(640, 169);
+            button3.Name = "button3";
+            button3.Size = new Size(139, 60);
+            button3.TabIndex = 7;
+            button3.Text = "모든 내용 삭제";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(textBox1);
@@ -102,5 +140,8 @@
         private TextBox textBox1;
         private Button button1;
         private Label label2;
+        private Label label3;
+        private Button button2;
+        private Button button3;
     }
 }
